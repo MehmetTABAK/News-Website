@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!--
+Bu dosya, Web projenizin yayımlama/paket işlemi tarafından kullanılıyor. MSBuild dosyasını düzenleyerek
+bu işlemin davranışını düzenleyebilirsiniz. Bununla ilgili daha fazla bilgi edinmek için https://go.microsoft.com/fwlink/?LinkID=208121 adresini ziyaret edin. 
+-->
+<Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <TimeStampOfAssociatedLegacyPublishXmlFile />
+    <EncryptedPassword>AQAAANCMnd8BFdERjHoAwE/Cl+sBAAAA3BaEJBPz40ae9yVgzr8wFgAAAAACAAAAAAAQZgAAAAEAACAAAABuObiANxLTmqiw5AsFUQzDskjM/O4HKjyeyultn3E4MAAAAAAOgAAAAAIAACAAAADATfHuPCxXJa+fiKbrDSRqDnE7O7RHhW+M4GIRjpTz/IAAAABBAVlW2U7mzS9wi/QoHpGiuJIHiTgk9ypecMMXAxg6xhfgj31YWDZsZ/115WIrFE4+quzVLuV9JdUYnbX1PleSAy6MnZUd0AKV+1X91HT3ty4Gkh4EJSUIPrJhluWRJffDl6xboWh90frhj+YR8dFAlkW2HbWbLEk1fFB7LadmrEAAAABKnvl+GvjV8yudV6DuJ7mwiWE1vc+KH2jH1XdCyanSDjsFA/6ECzxEA/UEMnE51H5O6iqYaAYzsINR2/ccOWkU</EncryptedPassword>
+    <History>True|2023-01-22T09:10:16.8432567Z;</History>
+  </PropertyGroup>
+  <ItemGroup>
+    <AzureDBConnectionStrings Include="Data Source=(localdb)\MSSQLLocalDB;Initial Catalog=haberSitesiDB;Integrated Security=True" />
+    <AzureDBConnectionStrings Include="Data Source=tcp:denemev3dbserver.database.windows.net,1433;Initial Catalog=denemeV3_db;User Id=haberSitesiDB@denemev3dbserver;Password=denemev3" />
+  </ItemGroup>
+  <ItemGroup>
+    <DestinationConnectionStrings Include="(LocalDb)::MSSQLLocalDB">
+      <Value>Data Source=%28LocalDB%29\MSSQLLocalDB%3bInitial Catalog=haberSitesiDB%3bIntegrated Security=True</Value>
+    </DestinationConnectionStrings>
+    <DestinationConnectionStrings Include="(localdb):MSSQLLocalDB">
+      <Value>Data Source=%28LocalDB%29\MSSQLLocalDB%3bInitial Catalog=haberSitesiDB%3bIntegrated Security=True</Value>
+    </DestinationConnectionStrings>
+    <DestinationConnectionStrings Include="Azure:SignalR:ConnectionString">
+      <Value>Data Source=%28LocalDB%29\MSSQLLocalDB%3bInitial Catalog=haberSitesiDB%3bIntegrated Security=True</Value>
+    </DestinationConnectionStrings>
+  </ItemGroup>
+</Project>
